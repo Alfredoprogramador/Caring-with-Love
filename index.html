@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caring with Love — Conectamos famílias a cuidadores qualificados com carinho e confiança." />
+  <title>Caring with Love</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard/screen-reader users -->
+  <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+
+  <!-- Live region for dynamic announcements -->
+  <div id="live-region" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ===== Header / Navigation ===== -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="Navegação principal">
+      <a href="index.html" class="site-logo" aria-label="Caring with Love — página inicial">
+        Caring <span>with Love</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="cadastro-cliente.html">Sou Cliente</a></li>
+        <li><a href="cadastro-cuidador.html">Sou Cuidador(a)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Main content ===== -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Cuidado com Amor, <br>Confiança em Cada Momento</h1>
+      <p>
+        Conectamos famílias a cuidadores qualificados que tratam seus entes queridos
+        com dedicação, respeito e muito carinho.
+      </p>
+      <div class="hero-actions">
+        <a href="cadastro-cliente.html" class="btn btn-primary">Preciso de um Cuidador</a>
+        <a href="cadastro-cuidador.html" class="btn btn-secondary">Quero ser Cuidador(a)</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" aria-labelledby="features-heading">
+      <h2 id="features-heading">Por que escolher a Caring with Love?</h2>
+      <ul class="cards-grid" role="list">
+        <li class="card">
+          <span class="card-icon" aria-hidden="true">🔍</span>
+          <h3>Cuidadores Verificados</h3>
+          <p>Todos os nossos cuidadores passam por verificação de antecedentes e avaliação de competências.</p>
+        </li>
+        <li class="card card-green">
+          <span class="card-icon" aria-hidden="true">💛</span>
+          <h3>Atendimento Humanizado</h3>
+          <p>Acreditamos que o cuidado vai além das tarefas técnicas — é sobre amor, respeito e dignidade.</p>
+        </li>
+        <li class="card">
+          <span class="card-icon" aria-hidden="true">🔒</span>
+          <h3>Segurança e Privacidade</h3>
+          <p>Seus dados são tratados com sigilo e em conformidade com a LGPD.</p>
+        </li>
+        <li class="card card-green">
+          <span class="card-icon" aria-hidden="true">📞</span>
+          <h3>Suporte Contínuo</h3>
+          <p>Nossa equipe está disponível para apoiar clientes e cuidadores durante todo o processo.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Registration CTA -->
+    <section class="register-section" aria-labelledby="register-heading">
+      <h2 id="register-heading">Comece Agora</h2>
+      <p>
+        Faça seu cadastro de forma rápida, segura e gratuita.
+        Escolha o perfil que melhor descreve você:
+      </p>
+      <div class="register-cards">
+        <article class="register-card" aria-labelledby="card-cliente-title">
+          <span class="card-icon" aria-hidden="true">👨‍👩‍👧‍👦</span>
+          <h3 id="card-cliente-title">Sou Cliente</h3>
+          <p>Preciso de cuidados para mim ou para um familiar e quero encontrar o cuidador ideal.</p>
+          <a href="cadastro-cliente.html" class="btn btn-primary">Cadastrar como Cliente</a>
+        </article>
+        <article class="register-card card-green" aria-labelledby="card-cuidador-title">
+          <span class="card-icon" aria-hidden="true">🧑‍⚕️</span>
+          <h3 id="card-cuidador-title">Sou Cuidador(a)</h3>
+          <p>Tenho experiência em cuidados e quero me cadastrar para ajudar famílias.</p>
+          <a href="cadastro-cuidador.html" class="btn btn-secondary">Cadastrar como Cuidador(a)</a>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Caring with Love. Todos os direitos reservados.</p>
+    <p class="mt-1">
+      <a href="politica-privacidade.html">Política de Privacidade</a> ·
+      <a href="termos-uso.html">Termos de Uso</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

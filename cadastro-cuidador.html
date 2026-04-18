@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cadastro de cuidadores — Caring with Love. Junte-se à nossa rede e ajude famílias que precisam de cuidado." />
+  <title>Cadastro de Cuidador(a) — Caring with Love</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="cadastro-cuidador">
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+
+  <!-- Live region -->
+  <div id="live-region" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header" role="banner">
+    <nav class="nav-container" aria-label="Navegação principal">
+      <a href="index.html" class="site-logo" aria-label="Caring with Love — página inicial">
+        Caring <span>with Love</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="cadastro-cliente.html">Sou Cliente</a></li>
+        <li><a href="cadastro-cuidador.html" aria-current="page">Sou Cuidador(a)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Main ===== -->
+  <main id="main-content" tabindex="-1">
+    <div class="page-container">
+
+      <!-- Page header -->
+      <header class="page-header green">
+        <span class="page-icon" aria-hidden="true">🧑‍⚕️</span>
+        <h1>Cadastro de Cuidador(a)</h1>
+        <p>Faça parte da nossa rede e conecte-se com famílias que precisam do seu cuidado e dedicação.</p>
+      </header>
+
+      <!-- Required fields note -->
+      <p class="form-hint mb-2" id="required-note">
+        Campos marcados com <span aria-hidden="true"><strong>*</strong></span>
+        <span class="sr-only">asterisco</span> são obrigatórios.
+      </p>
+
+      <!-- Form card -->
+      <div class="form-card" role="region" aria-label="Formulário de cadastro de cuidador">
+        <form
+          id="form-cuidador"
+          novalidate
+          aria-describedby="required-note"
+        >
+
+          <!-- 1. Dados pessoais -->
+          <h2 class="form-section-title green" id="section-pessoal">1. Dados Pessoais</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">
+                Nome completo <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="nome-error"
+                data-validate="required"
+                placeholder="Ex.: João Souza"
+              />
+              <span id="nome-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="cpf">
+                CPF <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="cpf"
+                name="cpf"
+                autocomplete="off"
+                inputmode="numeric"
+                required
+                aria-required="true"
+                aria-describedby="cpf-error cpf-hint"
+                data-validate="cpf"
+                placeholder="000.000.000-00"
+                maxlength="14"
+              />
+              <span id="cpf-hint" class="form-hint">Somente números (11 dígitos)</span>
+              <span id="cpf-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="data-nascimento">
+                Data de nascimento <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="date"
+                id="data-nascimento"
+                name="data_nascimento"
+                autocomplete="bday"
+                required
+                aria-required="true"
+                aria-describedby="data-nascimento-error data-nascimento-hint"
+                data-validate="minAge:18"
+              />
+              <span id="data-nascimento-hint" class="form-hint">É necessário ter 18 anos ou mais</span>
+              <span id="data-nascimento-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="genero">Gênero</label>
+              <select
+                id="genero"
+                name="genero"
+                autocomplete="sex"
+              >
+                <option value="">Selecione (opcional)</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="nao-binario">Não-binário</option>
+                <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 2. Contato -->
+          <h2 class="form-section-title green" id="section-contato">2. Contato</h2>
+
+          <div class="form-group">
+            <label for="email">
+              E-mail <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+              data-validate="email"
+              placeholder="seuemail@exemplo.com"
+            />
+            <span id="email-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefone">
+                Telefone / WhatsApp <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                autocomplete="tel"
+                inputmode="numeric"
+                required
+                aria-required="true"
+                aria-describedby="telefone-error telefone-hint"
+                data-validate="phone"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+              />
+              <span id="telefone-hint" class="form-hint">Com DDD</span>
+              <span id="telefone-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="telefone-alternativo">Telefone alternativo</label>
+              <input
+                type="tel"
+                id="telefone-alternativo"
+                name="telefone_alternativo"
+                autocomplete="tel"
+                inputmode="numeric"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+              />
+            </div>
+          </div>
+
+          <!-- 3. Endereço -->
+          <h2 class="form-section-title green" id="section-endereco">3. Endereço</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cep">
+                CEP <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="cep"
+                name="cep"
+                inputmode="numeric"
+                autocomplete="postal-code"
+                required
+                aria-required="true"
+                aria-describedby="cep-error cep-hint"
+                data-validate="cep"
+                placeholder="00000-000"
+                maxlength="9"
+              />
+              <span id="cep-hint" class="form-hint">O endereço será preenchido automaticamente</span>
+              <span id="cep-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="estado">
+                Estado <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="estado"
+                name="estado"
+                autocomplete="address-level1"
+                required
+                aria-required="true"
+                aria-describedby="estado-error"
+                data-validate="required"
+                placeholder="UF"
+                maxlength="2"
+              />
+              <span id="estado-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">
+              Cidade <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="cidade"
+              name="cidade"
+              autocomplete="address-level2"
+              required
+              aria-required="true"
+              aria-describedby="cidade-error"
+              data-validate="required"
+              placeholder="Sua cidade"
+            />
+            <span id="cidade-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="bairro">
+              Bairro <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="text"
+              id="bairro"
+              name="bairro"
+              autocomplete="address-level3"
+              required
+              aria-required="true"
+              aria-describedby="bairro-error"
+              data-validate="required"
+              placeholder="Seu bairro"
+            />
+            <span id="bairro-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="endereco">
+                Logradouro <span class="required-mark" aria-hidden="true">*</span>
+              </label>
+              <input
+                type="text"
+                id="endereco"
+                name="endereco"
+                autocomplete="street-address"
+                required
+                aria-required="true"
+                aria-describedby="endereco-error"
+                data-validate="required"
+                placeholder="Rua, Avenida…"
+              />
+              <span id="endereco-error" class="field-error" role="alert" aria-live="assertive"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="numero">Número</label>
+              <input
+                type="text"
+                id="numero"
+                name="numero"
+                inputmode="numeric"
+                autocomplete="off"
+                placeholder="Ex.: 123 / S/N"
+              />
+            </div>
+          </div>
+
+          <!-- 4. Experiência profissional -->
+          <h2 class="form-section-title green" id="section-experiencia">4. Experiência Profissional</h2>
+
+          <div class="form-group">
+            <label for="anos-experiencia">
+              Anos de experiência em cuidados <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="anos-experiencia"
+              name="anos_experiencia"
+              required
+              aria-required="true"
+              aria-describedby="anos-experiencia-error"
+              data-validate="select"
+            >
+              <option value="">Selecione…</option>
+              <option value="menos-de-1">Menos de 1 ano</option>
+              <option value="1-2">1 a 2 anos</option>
+              <option value="3-5">3 a 5 anos</option>
+              <option value="6-10">6 a 10 anos</option>
+              <option value="mais-de-10">Mais de 10 anos</option>
+            </select>
+            <span id="anos-experiencia-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <fieldset class="form-group">
+            <legend>
+              Áreas de atuação <span class="required-mark" aria-hidden="true">*</span>
+            </legend>
+            <div class="checkbox-group" aria-describedby="areas-hint">
+              <label class="checkbox-item">
+                <input type="checkbox" name="areas" value="idosos" />
+                Cuidado de idosos
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="areas" value="criancas" />
+                Cuidado de crianças
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="areas" value="deficiencia" />
+                Pessoas com deficiência
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="areas" value="pos-cirurgia" />
+                Pós-cirurgia / convalescença
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="areas" value="doencas-cronicas" />
+                Doenças crônicas (diabetes, Alzheimer, etc.)
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="areas" value="cuidados-paliativos" />
+                Cuidados paliativos
+              </label>
+            </div>
+            <span id="areas-hint" class="form-hint">Selecione todas as opções aplicáveis</span>
+          </fieldset>
+
+          <fieldset class="form-group">
+            <legend>Formação / Certificações</legend>
+            <div class="checkbox-group">
+              <label class="checkbox-item">
+                <input type="checkbox" name="formacao" value="tecnico-enfermagem" />
+                Técnico em enfermagem
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="formacao" value="cuidador-profissional" />
+                Curso de cuidador profissional
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="formacao" value="primeiros-socorros" />
+                Primeiros socorros
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="formacao" value="graduacao-saude" />
+                Graduação na área da saúde
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="formacao" value="outro" />
+                Outro
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="disponibilidade">
+              Disponibilidade <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <select
+              id="disponibilidade"
+              name="disponibilidade"
+              required
+              aria-required="true"
+              aria-describedby="disponibilidade-error"
+              data-validate="select"
+            >
+              <option value="">Selecione…</option>
+              <option value="integral">Integral (24h)</option>
+              <option value="diurno">Diurno (6h às 18h)</option>
+              <option value="noturno">Noturno (18h às 6h)</option>
+              <option value="fins-de-semana">Fins de semana</option>
+              <option value="flexivel">Flexível — a combinar</option>
+            </select>
+            <span id="disponibilidade-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="sobre-mim">
+              Sobre mim <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <textarea
+              id="sobre-mim"
+              name="sobre_mim"
+              required
+              aria-required="true"
+              aria-describedby="sobre-mim-error sobre-mim-hint"
+              data-validate="required"
+              rows="5"
+              placeholder="Conte sua experiência, motivações, habilidades e diferenciais…"
+            ></textarea>
+            <span id="sobre-mim-hint" class="form-hint">
+              Esta informação será exibida no seu perfil para as famílias.
+            </span>
+            <span id="sobre-mim-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <!-- 5. Documentação -->
+          <h2 class="form-section-title green" id="section-docs">5. Documentação e Antecedentes</h2>
+
+          <fieldset class="form-group">
+            <legend>Documentos disponíveis</legend>
+            <div class="checkbox-group" aria-describedby="docs-hint">
+              <label class="checkbox-item">
+                <input type="checkbox" name="docs" value="rg-cpf" />
+                RG e CPF
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="docs" value="antecedentes" />
+                Certidão de antecedentes criminais
+              </label>
+              <label class="checkbox-item">
+                <input type="checkbox" name="docs" value="referencias" />
+                Referências de empregos anteriores
+              </label>
+            </div>
+            <span id="docs-hint" class="form-hint">
+              A documentação poderá ser solicitada pela equipe para validação.
+            </span>
+          </fieldset>
+
+          <!-- 6. Acesso à conta -->
+          <h2 class="form-section-title green" id="section-conta">6. Acesso à Conta</h2>
+
+          <div class="form-group">
+            <label for="senha">
+              Senha <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="password"
+              id="senha"
+              name="senha"
+              autocomplete="new-password"
+              required
+              aria-required="true"
+              aria-describedby="senha-error senha-hint"
+              data-validate="password"
+            />
+            <span id="senha-hint" class="form-hint">Mínimo de 8 caracteres</span>
+            <span id="senha-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmar-senha">
+              Confirmar senha <span class="required-mark" aria-hidden="true">*</span>
+            </label>
+            <input
+              type="password"
+              id="confirmar-senha"
+              name="confirmar_senha"
+              autocomplete="new-password"
+              required
+              aria-required="true"
+              aria-describedby="confirmar-senha-error"
+              data-validate="passwordConfirm:senha"
+            />
+            <span id="confirmar-senha-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <!-- 7. Consentimento -->
+          <h2 class="form-section-title green" id="section-consentimento">7. Consentimento</h2>
+
+          <div class="consent-group green">
+            <label class="checkbox-item">
+              <input
+                type="checkbox"
+                id="termos"
+                name="termos"
+                required
+                aria-required="true"
+                aria-describedby="termos-error"
+                data-validate="checked"
+              />
+              Li e concordo com os
+              <a href="termos-uso.html" target="_blank" rel="noopener noreferrer">
+                Termos de Uso
+              </a>
+              e a
+              <a href="politica-privacidade.html" target="_blank" rel="noopener noreferrer">
+                Política de Privacidade
+              </a>
+              (LGPD).
+            </label>
+            <span id="termos-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="consent-group green">
+            <label class="checkbox-item">
+              <input
+                type="checkbox"
+                id="verificacao"
+                name="verificacao"
+                required
+                aria-required="true"
+                aria-describedby="verificacao-error"
+                data-validate="checked"
+              />
+              Autorizo a Caring with Love a realizar verificação de antecedentes e validação de documentos.
+            </label>
+            <span id="verificacao-error" class="field-error" role="alert" aria-live="assertive"></span>
+          </div>
+
+          <div class="consent-group green">
+            <label class="checkbox-item">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              Desejo receber dicas, novidades e oportunidades por e-mail. (Opcional)
+            </label>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="btn btn-secondary btn-full mt-2"
+            data-label="Finalizar Cadastro"
+          >
+            Finalizar Cadastro
+          </button>
+
+          <p class="form-hint text-center mt-1">
+            Já tem cadastro? <a href="login.html">Entrar na minha conta</a>
+          </p>
+
+        </form>
+      </div><!-- /.form-card -->
+    </div><!-- /.page-container -->
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Caring with Love. Todos os direitos reservados.</p>
+    <p class="mt-1">
+      <a href="politica-privacidade.html">Política de Privacidade</a> ·
+      <a href="termos-uso.html">Termos de Uso</a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
