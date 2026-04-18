@@ -168,8 +168,8 @@ function setupCepLookup(cepInputId, fields) {
         }
       });
       announce('Endereço preenchido automaticamente a partir do CEP.');
-    } catch (_) {
-      // Silently fail — user can fill manually
+    } catch (_err) {
+      // Silently fail — user can fill the address fields manually
     }
   }
 
