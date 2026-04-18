@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caring with Love – Cuidados especializados para idosos. Oferecemos serviços de acompanhamento, cuidado pessoal e suporte médico para garantir bem-estar e qualidade de vida." />
+  <title>Caring with Love | Cuidados Especializados para Idosos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Caring with Love – início">
+        <span class="logo__icon">♥</span>
+        <span class="logo__text">Caring <em>with</em> Love</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="mainNav" role="navigation" aria-label="Menu principal">
+        <ul class="nav__list">
+          <li><a href="#inicio"     class="nav__link">Início</a></li>
+          <li><a href="#servicos"   class="nav__link">Serviços</a></li>
+          <li><a href="#sobre"      class="nav__link">Sobre Nós</a></li>
+          <li><a href="#equipe"     class="nav__link">Equipe</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#contato"    class="nav__link nav__link--cta">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio" aria-labelledby="heroHeading">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__tag">Cuidados com carinho e respeito</p>
+        <h1 class="hero__heading" id="heroHeading">
+          O melhor cuidado<br />para quem você ama
+        </h1>
+        <p class="hero__sub">
+          Oferecemos serviços especializados para idosos, proporcionando dignidade,
+          conforto e qualidade de vida com profissionais qualificados e dedicados.
+        </p>
+        <div class="hero__actions">
+          <a href="#contato" class="btn btn--primary">Fale Conosco</a>
+          <a href="#servicos" class="btn btn--outline">Nossos Serviços</a>
+        </div>
+      </div>
+      <div class="hero__wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats" aria-label="Nossos números">
+      <div class="container stats__grid">
+        <div class="stat-card">
+          <span class="stat-card__number">15+</span>
+          <span class="stat-card__label">Anos de Experiência</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">500+</span>
+          <span class="stat-card__label">Famílias Atendidas</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">50+</span>
+          <span class="stat-card__label">Profissionais Especializados</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__number">98%</span>
+          <span class="stat-card__label">Satisfação dos Clientes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="services section" id="servicos" aria-labelledby="servicesHeading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">O que oferecemos</p>
+          <h2 class="section__title" id="servicesHeading">Nossos Serviços</h2>
+          <p class="section__sub">
+            Cada idoso é único. Por isso, nossos serviços são personalizados para atender
+            às necessidades individuais de cada pessoa.
+          </p>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🏠</div>
+            <h3 class="service-card__title">Cuidado Domiciliar</h3>
+            <p class="service-card__desc">
+              Cuidadores treinados visitam o lar do idoso para oferecer assistência nas atividades
+              diárias, mantendo a autonomia e o conforto de estar em casa.
+            </p>
+            <ul class="service-card__list">
+              <li>Higiene pessoal e banho</li>
+              <li>Preparação de refeições</li>
+              <li>Organização do lar</li>
+              <li>Acompanhamento em consultas</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">💊</div>
+            <h3 class="service-card__title">Suporte Médico</h3>
+            <p class="service-card__desc">
+              Equipe de enfermagem qualificada para administrar medicamentos, monitorar sinais
+              vitais e coordenar com médicos especialistas.
+            </p>
+            <ul class="service-card__list">
+              <li>Administração de medicamentos</li>
+              <li>Monitoramento de saúde</li>
+              <li>Curativos e cuidados pós-cirúrgicos</li>
+              <li>Relatórios médicos regulares</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🧠</div>
+            <h3 class="service-card__title">Estimulação Cognitiva</h3>
+            <p class="service-card__desc">
+              Atividades terapêuticas desenvolvidas por especialistas para manter e estimular as
+              funções cognitivas, reduzindo o risco de demência.
+            </p>
+            <ul class="service-card__list">
+              <li>Jogos e atividades mentais</li>
+              <li>Terapia ocupacional</li>
+              <li>Musicoterapia</li>
+              <li>Atividades artísticas</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🤝</div>
+            <h3 class="service-card__title">Companhia e Socialização</h3>
+            <p class="service-card__desc">
+              Combatemos a solidão com presença humana calorosa, conversas, passeios e atividades
+              sociais que promovem bem-estar emocional.
+            </p>
+            <ul class="service-card__list">
+              <li>Acompanhamento em passeios</li>
+              <li>Conversas e leitura em voz alta</li>
+              <li>Participação em grupos sociais</li>
+              <li>Suporte emocional</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🏋️</div>
+            <h3 class="service-card__title">Fisioterapia e Mobilidade</h3>
+            <p class="service-card__desc">
+              Programas de exercícios físicos adaptados para manter ou recuperar a mobilidade,
+              força e equilíbrio do idoso.
+            </p>
+            <ul class="service-card__list">
+              <li>Exercícios de equilíbrio</li>
+              <li>Prevenção de quedas</li>
+              <li>Reabilitação motora</li>
+              <li>Caminhadas assistidas</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">🌙</div>
+            <h3 class="service-card__title">Cuidado Noturno</h3>
+            <p class="service-card__desc">
+              Assistência durante a noite para garantir a segurança e o bem-estar do idoso,
+              proporcionando tranquilidade para toda a família.
+            </p>
+            <ul class="service-card__list">
+              <li>Vigilância noturna</li>
+              <li>Auxílio em higiene noturna</li>
+              <li>Prevenção de acidentes</li>
+              <li>Plantões de 12 e 24 horas</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE NÓS ===== -->
+    <section class="about section section--alt" id="sobre" aria-labelledby="aboutHeading">
+      <div class="container about__inner">
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__img-wrap">
+            <div class="about__img-placeholder">
+              <span class="about__img-emoji">👴🏽👵🏽</span>
+              <p>Cuidando com amor</p>
+            </div>
+          </div>
+          <div class="about__badge">
+            <span class="about__badge-number">15+</span>
+            <span class="about__badge-text">Anos de experiência</span>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="section__tag">Quem somos</p>
+          <h2 class="section__title" id="aboutHeading">Sobre a Caring with Love</h2>
+          <p class="about__text">
+            Fundada com o propósito de transformar a qualidade de vida dos idosos, a
+            <strong>Caring with Love</strong> nasceu da crença de que todo ser humano merece
+            envelhecer com dignidade, carinho e respeito.
+          </p>
+          <p class="about__text">
+            Nossa equipe multidisciplinar — composta por cuidadores, enfermeiros, fisioterapeutas
+            e psicólogos — trabalha de forma integrada para oferecer um cuidado completo, que vai
+            além do físico e cuida também da saúde emocional e social de cada idoso.
+          </p>
+
+          <div class="about__values">
+            <div class="value-item">
+              <span class="value-item__icon" aria-hidden="true">❤️</span>
+              <div>
+                <strong>Amor e Empatia</strong>
+                <p>Tratamos cada idoso como parte da nossa própria família.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-item__icon" aria-hidden="true">🎓</span>
+              <div>
+                <strong>Profissionalismo</strong>
+                <p>Equipe certificada e em constante atualização técnica.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-item__icon" aria-hidden="true">🛡️</span>
+              <div>
+                <strong>Segurança</strong>
+                <p>Protocolos rigorosos para garantir a integridade de todos.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contato" class="btn btn--primary">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== POR QUE NÓS ===== -->
+    <section class="why section" aria-labelledby="whyHeading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">Nossas vantagens</p>
+          <h2 class="section__title" id="whyHeading">Por que escolher a Caring with Love?</h2>
+        </div>
+        <div class="why__grid">
+          <div class="why-item">
+            <span class="why-item__icon" aria-hidden="true">✅</span>
+            <h3>Plano de Cuidado Personalizado</h3>
+            <p>Elaboramos um plano individual para cada idoso após avaliação minuciosa das suas necessidades.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-item__icon" aria-hidden="true">📱</span>
+            <h3>Comunicação com a Família</h3>
+            <p>Relatórios periódicos e canal direto de comunicação para manter a família sempre informada.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-item__icon" aria-hidden="true">🕐</span>
+            <h3>Disponibilidade 24/7</h3>
+            <p>Nossa equipe está disponível em qualquer horário para emergências e necessidades urgentes.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-item__icon" aria-hidden="true">💰</span>
+            <h3>Planos Acessíveis</h3>
+            <p>Diferentes pacotes de serviços adaptados à sua necessidade e orçamento, com flexibilidade de contratação.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-item__icon" aria-hidden="true">🔒</span>
+            <h3>Profissionais Verificados</h3>
+            <p>Todos os cuidadores passam por rigorosa seleção, verificação de antecedentes e treinamento especializado.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-item__icon" aria-hidden="true">🌟</span>
+            <h3>Experiência Comprovada</h3>
+            <p>Mais de 15 anos no mercado com centenas de famílias satisfeitas e cases de sucesso documentados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EQUIPE ===== -->
+    <section class="team section section--alt" id="equipe" aria-labelledby="teamHeading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">Conheça nossa equipe</p>
+          <h2 class="section__title" id="teamHeading">Profissionais Dedicados</h2>
+          <p class="section__sub">
+            Cada membro da nossa equipe é escolhido não só pela competência técnica,
+            mas pela vocação de cuidar.
+          </p>
+        </div>
+
+        <div class="team__grid">
+
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">👩‍⚕️</div>
+            <h3 class="team-card__name">Dra. Ana Silva</h3>
+            <p class="team-card__role">Gerente Clínica · Enfermeira Especialista</p>
+            <p class="team-card__bio">
+              15 anos de experiência em geriatria. Coordena os protocolos de saúde e o
+              treinamento contínuo da equipe de enfermagem.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">👨‍⚕️</div>
+            <h3 class="team-card__name">Dr. Carlos Mendes</h3>
+            <p class="team-card__role">Fisioterapeuta Sênior</p>
+            <p class="team-card__bio">
+              Especialista em reabilitação geriátrica com foco em prevenção de quedas
+              e recuperação de mobilidade para idosos.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">👩‍🦳</div>
+            <h3 class="team-card__name">Patrícia Rocha</h3>
+            <p class="team-card__role">Psicóloga · Terapeuta Ocupacional</p>
+            <p class="team-card__bio">
+              Especialista em saúde mental do idoso, conduz programas de estimulação
+              cognitiva e apoio emocional para pacientes e familiares.
+            </p>
+          </article>
+
+          <article class="team-card">
+            <div class="team-card__avatar" aria-hidden="true">👨‍🍳</div>
+            <h3 class="team-card__name">Roberto Lima</h3>
+            <p class="team-card__role">Nutricionista Clínico</p>
+            <p class="team-card__bio">
+              Elabora cardápios personalizados e nutritivos para cada idoso, levando em
+              consideração restrições alimentares e preferências pessoais.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="testimonials section" id="depoimentos" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">O que dizem nossos clientes</p>
+          <h2 class="section__title" id="testimonialsHeading">Depoimentos</h2>
+        </div>
+
+        <div class="testimonials__slider" role="list">
+
+          <blockquote class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-card__text">
+              "A Caring with Love transformou a vida da minha mãe. Ela ficou muito mais animada,
+              ativa e feliz depois que começou a receber os cuidados da equipe. Me sinto segura
+              sabendo que ela está em boas mãos."
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">👩</span>
+              <div>
+                <cite>Márcia Ferreira</cite>
+                <span>Filha de cliente · São Paulo, SP</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Contratar a Caring with Love foi a melhor decisão que tomamos. O atendimento
+              é excepcional e os profissionais são extremamente cuidadosos e atenciosos com
+              meu pai. Recomendo de olhos fechados!"
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">👨</span>
+              <div>
+                <cite>João Oliveira</cite>
+                <span>Filho de cliente · Rio de Janeiro, RJ</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card" role="listitem">
+            <div class="testimonial-card__stars" aria-label="5 estrelas">★★★★★</div>
+            <p class="testimonial-card__text">
+              "Minha avó adora os profissionais da Caring with Love. Ela melhorou muito
+              sua mobilidade com a fisioterapia e as atividades cognitivas a mantêm
+              sempre ativa e com a memória afiada. Gratidão imensa!"
+            </p>
+            <footer class="testimonial-card__author">
+              <span class="testimonial-card__avatar" aria-hidden="true">👩‍🦱</span>
+              <div>
+                <cite>Fernanda Costa</cite>
+                <span>Neta de cliente · Belo Horizonte, MG</span>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLANOS ===== -->
+    <section class="plans section section--alt" aria-labelledby="plansHeading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__tag">Escolha o ideal para você</p>
+          <h2 class="section__title" id="plansHeading">Nossos Planos</h2>
+          <p class="section__sub">
+            Planos flexíveis para atender todas as necessidades e orçamentos.
+            Entre em contato para um orçamento personalizado.
+          </p>
+        </div>
+
+        <div class="plans__grid">
+
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <h3 class="plan-card__name">Básico</h3>
+              <p class="plan-card__hours">4 horas / dia</p>
+            </div>
+            <ul class="plan-card__features">
+              <li>✓ Higiene pessoal</li>
+              <li>✓ Preparação de refeições</li>
+              <li>✓ Companhia e conversas</li>
+              <li>✓ Organização do lar</li>
+              <li class="inactive">✗ Suporte médico</li>
+              <li class="inactive">✗ Fisioterapia</li>
+              <li class="inactive">✗ Cuidado noturno</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline btn--full">Solicitar Orçamento</a>
+          </div>
+
+          <div class="plan-card plan-card--featured">
+            <div class="plan-card__badge">Mais Popular</div>
+            <div class="plan-card__header">
+              <h3 class="plan-card__name">Completo</h3>
+              <p class="plan-card__hours">8 horas / dia</p>
+            </div>
+            <ul class="plan-card__features">
+              <li>✓ Higiene pessoal</li>
+              <li>✓ Preparação de refeições</li>
+              <li>✓ Companhia e conversas</li>
+              <li>✓ Organização do lar</li>
+              <li>✓ Suporte médico</li>
+              <li>✓ Fisioterapia básica</li>
+              <li class="inactive">✗ Cuidado noturno</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary btn--full">Solicitar Orçamento</a>
+          </div>
+
+          <div class="plan-card">
+            <div class="plan-card__header">
+              <h3 class="plan-card__name">Integral</h3>
+              <p class="plan-card__hours">24 horas / dia</p>
+            </div>
+            <ul class="plan-card__features">
+              <li>✓ Higiene pessoal</li>
+              <li>✓ Preparação de refeições</li>
+              <li>✓ Companhia e conversas</li>
+              <li>✓ Organização do lar</li>
+              <li>✓ Suporte médico completo</li>
+              <li>✓ Fisioterapia completa</li>
+              <li>✓ Cuidado noturno</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline btn--full">Solicitar Orçamento</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="contact section" id="contato" aria-labelledby="contactHeading">
+      <div class="container contact__inner">
+
+        <div class="contact__info">
+          <p class="section__tag">Fale conosco</p>
+          <h2 class="section__title" id="contactHeading">Entre em Contato</h2>
+          <p class="contact__text">
+            Nossa equipe está pronta para esclarecer todas as suas dúvidas e elaborar
+            um plano de cuidado personalizado para o seu familiar.
+          </p>
+
+          <div class="contact__details">
+            <div class="contact__detail-item">
+              <span class="contact__detail-icon" aria-hidden="true">📞</span>
+              <div>
+                <strong>Telefone / WhatsApp</strong>
+                <a href="tel:+5511999999999">(11) 99999-9999</a>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <span class="contact__detail-icon" aria-hidden="true">📧</span>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:contato@caringwithlove.com.br">contato@caringwithlove.com.br</a>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <span class="contact__detail-icon" aria-hidden="true">📍</span>
+              <div>
+                <strong>Endereço</strong>
+                <address>Rua das Flores, 123 – São Paulo, SP</address>
+              </div>
+            </div>
+            <div class="contact__detail-item">
+              <span class="contact__detail-icon" aria-hidden="true">🕐</span>
+              <div>
+                <strong>Horário de Atendimento</strong>
+                <p>Segunda a Sexta: 8h – 18h<br/>Emergências: 24 horas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap">
+          <form class="contact-form" id="contactForm" novalidate aria-label="Formulário de contato">
+            <div class="form-group">
+              <label for="name">Nome completo <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" required autocomplete="name"
+                     placeholder="Seu nome completo" aria-required="true" />
+              <span class="form-error" id="nameError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">E-mail <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email"
+                     placeholder="seu@email.com" aria-required="true" />
+              <span class="form-error" id="emailError" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Telefone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel"
+                     placeholder="(00) 00000-0000" />
+            </div>
+
+            <div class="form-group">
+              <label for="service">Serviço de interesse</label>
+              <select id="service" name="service">
+                <option value="">Selecione um serviço</option>
+                <option value="domiciliar">Cuidado Domiciliar</option>
+                <option value="medico">Suporte Médico</option>
+                <option value="cognitivo">Estimulação Cognitiva</option>
+                <option value="companhia">Companhia e Socialização</option>
+                <option value="fisioterapia">Fisioterapia e Mobilidade</option>
+                <option value="noturno">Cuidado Noturno</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="4" required
+                        placeholder="Descreva a situação e as necessidades do seu familiar..."
+                        aria-required="true"></textarea>
+              <span class="form-error" id="messageError" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">
+              Enviar Mensagem
+            </button>
+
+            <p class="form-success" id="formSuccess" role="alert" hidden>
+              ✅ Mensagem enviada com sucesso! Entraremos em contato em breve.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--light" aria-label="Caring with Love – voltar ao início">
+          <span class="logo__icon">♥</span>
+          <span class="logo__text">Caring <em>with</em> Love</span>
+        </a>
+        <p class="footer__tagline">Cuidando de quem você ama com dedicação e carinho.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__links">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#servicos">Cuidado Domiciliar</a></li>
+          <li><a href="#servicos">Suporte Médico</a></li>
+          <li><a href="#servicos">Estimulação Cognitiva</a></li>
+          <li><a href="#servicos">Fisioterapia</a></li>
+          <li><a href="#servicos">Cuidado Noturno</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>Contato Rápido</h4>
+        <p><a href="tel:+5511999999999">📞 (11) 99999-9999</a></p>
+        <p><a href="mailto:contato@caringwithlove.com.br">📧 contato@caringwithlove.com.br</a></p>
+        <p>📍 Rua das Flores, 123 – São Paulo, SP</p>
+        <div class="footer__social" aria-label="Redes sociais">
+          <a href="#" aria-label="Facebook" class="social-link">f</a>
+          <a href="#" aria-label="Instagram" class="social-link">in</a>
+          <a href="#" aria-label="WhatsApp" class="social-link">w</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="currentYear"></span> Caring with Love. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <span aria-label="amor">♥</span> para cuidar de quem importa.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Voltar ao topo" hidden>↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
